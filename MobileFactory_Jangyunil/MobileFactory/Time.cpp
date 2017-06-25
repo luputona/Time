@@ -79,7 +79,7 @@ void Time::SearchTime()
 		for (int i = m_inputStart; i <= m_inputEnd; i++)
 		{			
 			m_ptimeArray[m_timeArraySize] = i;
-			cout <<"high" << m_ptimeArray[m_timeArraySize] << ' ';
+			//cout <<"high" << m_ptimeArray[m_timeArraySize] << ' ';
 			m_timeArraySize++;			
 		}			
 	}
@@ -88,13 +88,13 @@ void Time::SearchTime()
 		for (int i = m_inputStart; i < 24; i++)
 		{			
 			m_ptimeArray[m_timeArraySize] = i;			
-			cout << "low"<< m_ptimeArray[m_timeArraySize] << ' ';
+			//cout << "low"<< m_ptimeArray[m_timeArraySize] << ' ';
 			if (m_ptimeArray[m_timeArraySize] >= 23)
 			{
 				for (int i = 0; i <= m_inputEnd; i++)
 				{
 					m_ptimeArray[m_timeArraySize] = i;
-					cout << "low"<< m_ptimeArray[m_timeArraySize] << ' ';
+					//cout << "low"<< m_ptimeArray[m_timeArraySize] << ' ';
 					m_timeArraySize++;
 				}				
 			}			
